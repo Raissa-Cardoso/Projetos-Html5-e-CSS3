@@ -1,4 +1,4 @@
-# Projetos Html5 e CSS3
+# Projetos HTML5 e CSS3
 ***
  Projetos feitos durante o curso de Htm5 e CSS3 da Hcode
  1. Lista de tarefas
