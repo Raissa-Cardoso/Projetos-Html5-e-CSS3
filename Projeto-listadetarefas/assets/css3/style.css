@@ -1,0 +1,105 @@
+*{ /*seletor universal=para todos os elementos */
+    box-sizing: border-box;/*para que a section fique com 20px de padding mas mantenha o maximo de 300px */
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f2f2f2;    
+}
+header h1{
+    font-size: 2.5em; /*medida relativa, sendo 1em o padrão*/
+    text-align: center;
+    margin: 50px auto;
+}
+header a{
+    color: #666;
+    text-decoration: none;
+}
+header a:visited{ /*muda cor do link quando já clicado anteriormente*/
+    color: #000;    
+}
+header a:hover{ /*underline simbolizando o hyperlink*/
+    text-decoration: underline;    
+}
+header a:focus{ /*muda cor do link quando já clicado anteriormente*/
+    color:red;    
+}
+header a:active{ /*muda cor do link quando já clicado anteriormente*/
+    color:yellow;    
+}
+.content-center{ /*o conteúdo da section=div+form(margin+border+padding+conteudo) */
+    width: 100%;
+    max-width: 300px; /*comprimento do conteúdo=comprimento da div (filha de section) - padding da section*/
+    margin:auto;    
+    padding: 20px; /*para que a section tenha espaçamento interno de 20px; então comprimento total seria 340px */
+    background-color: #fff;
+    border-radius: 15px; /*cria moldura com cantos arredondados ao redor padding (ue dentro tem o conteúdo)*/
+}
+.todo{
+    list-style: none; /*tirando o estilo do marcador dos itens*/
+    padding: 0;
+}
+.todo li{
+    padding: 10px;
+    border-bottom: #ccc 1px solid;
+}
+.todo li input{
+    width: initial; /*aqui serviu para posicionar o checkbox antes do texto do item*/
+    margin-right: 10px;
+}
+.todo li.complete{ /*para o item que for concluído é carregada a classe complete*/
+    text-decoration: line-through; /*coloca uma linha em cima do texto do item*/
+    color: #999;
+    cursor: not-allowed;/*desabilita o cursor simbolizando que o item não pode ser clicado*/
+}
+.content-center img{ /*imagem descendente de section */
+    width: 70%; /* 70% do comprimento da div (elemento-mãe da imagem) */
+}
+.content-center .text-center{
+    text-align: center;
+}
+.content-center form{ /* tamanho do formulario=margin+conteúdo(inputs+padding+button)*/
+    margin: 20px;
+}
+.content-center input, 
+.content-center button{
+    width: 100%; /*comprimento=100% do conteúdo do form*/
+    padding: 10px 5px; /* tamanho do input= bordas(automaticas)+padding+conteudo(automatico)*/
+                       /* tamanho do button= bordas(automaticas)+padding+conteudo(automatico)*/
+    border: none; /*retirando a linha de marcação da borda */
+    outline: none; /*retira borda azul quando em foco*/
+}
+.content-center input{ /*criando linha embaixo dos inputs */
+    border-bottom-color: #ccc;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin-bottom: 10px;
+}
+.content-center input:focus{ /*quando o input for selecionado*/
+    border-bottom-color: #d07335; 
+}
+.content-center button{
+    background-color: #d07335;
+    color: #fff;
+}
+.content-center button:hover{ /*quando o mouse passar por cima do botão*/
+    background-color: #b55b28; 
+    cursor: pointer; /* "mão" de seleção*/
+}
+.content-center button:active{ /*quando o botão dor clicado*/
+    background-color: #c14e0e; 
+}
+#new-task{
+    width: 100%;
+    padding: 10px;
+}
+.todo button{
+    width: initial; /*aqui o initial só deu ao botão o tamanho padrão dele*/
+    color: #fff;
+    background-color: red;
+    float: right; /*para que o botão fique a direita do label*/
+    min-width: 30px;
+}
+footer{
+    font-size: 0.8em;
+    text-align: center;
+}

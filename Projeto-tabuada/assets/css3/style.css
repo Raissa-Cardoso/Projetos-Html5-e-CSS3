@@ -1,0 +1,35 @@
+*{ /*seletor universal=para todos os elementos */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f2f2f2;    
+}
+.content-center{ 
+    width: 100%;
+    max-width: 500px; 
+    margin:auto;
+    text-align: center;
+    padding: 20px; 
+    background-color: #fff;
+    border-radius: 15px; 
+}
+.content-center table{
+    width: 100%;
+    border-collapse: collapse; /*retira o espaço em branco padrão em volta das colunas (td)*/
+}
+.content-center td{
+    padding: .75rem;
+    border-top: 1px solid #DEE2E6;
+}
+.content-center tbody tr:nth-child(odd){ /* odd=configuração em linhas ímpares// even= linhas pares*/
+    background-color: rgba(0, 0, 0, .05);
+}
+.content-center tbody tr:hover{
+    background-color: rgba(0, 0, 0, .15);
+    cursor: pointer;
+}
+#valorA{
+    width: 100%;
+    padding: 10px;
+}
